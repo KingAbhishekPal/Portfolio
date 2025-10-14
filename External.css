@@ -1,0 +1,384 @@
+body {
+
+    font-family: arial;
+    background: linear-gradient(135deg, black, gray);
+    color: white;
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header-details {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    font-size: small;
+    background-image: linear-gradient(135deg, yellow, orange);
+    /* background:linear-gradient(135deg,#042331,#203a20); */
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-image: linear-gradient(135deg, yellow, orange);
+
+}
+
+.navbar .navbar-logo {
+    width: 40%;
+    padding-left: 3rem;
+}
+
+.navbar .navbar-logo>a {
+    text-decoration: none;
+}
+
+.navbar .navbar-logo a>span {
+    margin-left: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.navbar .navbar-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar .navbar-links>a {
+    text-decoration: none;
+    color: white;
+    border: 0.5px solid #FFD700;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.navbar .navbar-links>a:hover {
+    color: #FFD700;
+    transition: all 1s;
+}
+
+/* ******************** */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: row-reverse;
+}
+
+.left-box {
+    width: 40%;
+    margin: 2rem 0rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-box .profile-pic {
+    height: 25rem;
+    width: 25rem;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -1px 1px 10px #FFD700;
+
+}
+
+.left-box .profile-pic>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.left-box .profile-pic>img:hover {
+    transform: scale(1.13);
+    transition: all 1s;
+}
+
+.right-box {
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+    color: white;
+    word-wrap: break-word;
+    padding: 0rem 2rem;
+}
+
+.right-box .details a>button {
+    height: 40px;
+    width: 180px;
+    color: white;
+    border: none;
+    background-color: #FFD700;
+    border-radius: 0.5rem;
+}
+
+.right-box .details a>button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* ************************* */
+.about-contents {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3rem 0rem;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+.about-contents .profile {
+    width:40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+
+.about-contents .profile .image {
+    width: 22rem;
+    height: 24rem;
+    overflow: hidden;
+    border-radius:0.5rem;
+   
+}
+
+.about-contents .profile .image img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.about-contents .about-details {
+    width:50%;
+    box-sizing: border-box;
+    margin: auto 0rem;
+
+}
+
+.about-contents .about-details a button {
+    height: 40px;
+    width: 180px;
+    color: white;
+    border: none;
+    background-color: #FFD700;
+    border-radius: 0.5rem;
+}
+
+/* ************************** */
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.education-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.education-details>table {
+    border-collapse: collapse;
+    width:90%;
+    height:25rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.skills-details {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0rem;
+}
+
+.skills-details li {
+    margin: 3rem 0rem;
+    list-style-type: none;
+}
+
+.project-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3rem 0rem;
+    flex-wrap: wrap;
+    gap:2rem;
+
+}
+
+.project-n {
+   width:250px;
+   height:auto;
+   border-radius:0.25rem;
+   padding:0.75rem;
+   box-shadow: 0px 0px 3px black;
+}
+.project-n img{
+    width:100%;
+    height:200px;
+}
+
+.footer {
+    
+
+    /* margin: 2rem 0rem; */
+    background-color: rgba(97, 88, 88, 0.5);
+    padding: 1rem 0rem;
+}
+
+.footer .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .footer-links>a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dotted yellow;
+
+
+}
+
+.footer-icon a>i {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    margin: 0.6rem;
+}
+
+.footer-icon a>i:hover {
+    background-color: rgba(255, 215, 0, 0.5);
+    border: 1px dotted#FFD700;
+}
+
+.footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+
+}
+
+
+/* mediaQuery */
+@media screen and (max-width:768px) {
+    body {
+        font-size: 0.6rem;
+    }
+
+    .header {
+        font-size: 0.6rem;
+    }
+
+    .navbar .navbar-logo {
+        display: none;
+    }
+
+    .navbar .navbar-links {
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+
+    }
+
+    .navbar .navbar-links>a {
+        padding: 0.2rem;
+
+    }
+
+    .left-box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .right-box {
+        width: 100%;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .left-box .profile-pic {
+        height: 18rem;
+        width: 18rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 3rem;
+    }
+
+    .footer .footer-links>a {
+        font-size: 0.6rem;
+    }
+
+    .about-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-contents .about-details {
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+
+    .about-contents .profile {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-contents .profile .image {
+        width: 90%;
+        margin: 2rem 0rem;
+    }
+
+    .education-details>table {
+        width: 100%;
+    }
+
+}
